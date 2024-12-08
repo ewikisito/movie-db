@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+  background-color: black;
+}
+.display-list ul {
+  display: flex;
+  text-decoration-style: none;
+  gap: 10px;
+  color: whitesmoke;
+  list-style-type: none;
+}
+
+#bold {
+  font-weight: 600;
+}
+
+#login {
+  width: 80px;
+  height: 40px;
+  background-color: rgb(0, 146, 93);
+  padding: 8px;
+  color: white;
+  border-radius: 12px;
+  border: none;
+}
+
+#sign-up {
+  width: 80px;
+  height: 40px;
+  padding: 8px;
+  color: #ffffff;
+  border-radius: 12px;
+  background-color: rgb(42, 49, 81);
+  border: none;
+}
+
+.headings {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  gap: 32px;
+}
+
+.button-row {
+  display: flex;
+  gap: 12px;
+}
+
+#btn {
+  width: 100px;
+  height: 40px;
+  background-color: rgb(0, 146, 93);
+  padding: 8px;
+  color: white;
+  border-radius: 12px;
+  border: none;
+}
+
+
+#sign {
+  width: 100px;
+  height: 40px;
+  padding: 8px;
+  color: #ffffff;
+  border-radius: 12px;
+  background-color: rgb(42, 49, 81);
+  border: none;
+}
+.movie-logos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movie-logos img {
+  width: 150px;
+  height: 80px;
+  border-radius: 14px;
+}
+
+.cards-main {
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-main h2 {
+  text-align: center;
+  font-weight: 800;
+}
+
+.cards-sec {
+  padding: 8px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);;
+  gap: 8px;
+}
+
+.card {
+  padding-top: 1px;
+  position: relative;
+  height: 200px;
+  border-radius: 10px;
+}
+.card img {
+  height: 190px;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: yellow;
+}
+
+.card-holder {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-title {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.movie-category {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.rating {
+  display: flex;
+  gap: 4px;
+  border-right: 1px solid gray;
+  padding: 2px;
+}
+
+#m-title {
+  font-weight: 800;
+  color: white;
+}

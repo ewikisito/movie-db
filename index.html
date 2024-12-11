@@ -7,6 +7,10 @@
     <title>Vite App</title>
     <link rel="stylesheet" href="./src/style/work.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/fontawesome.min.css" integrity="sha512-lauN4D/0AgFUGvmMR+knQnbOADyD/XuQ8VF18I8Ll0+TLvsujshyxvU+uzogmQbSq6qJd5jnUdYtK8ShxXMlSg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
   </head>
   <body>
     <section class="container">
@@ -29,14 +33,11 @@
         </div>
       </div>
       <div class="headings">
-        <div>
-          <div class="title">Movie</div>
-          <h2>Star Wars: The Force Awaken</h2>
-          <p class="paragraph">2h40m</p>
-        </div>
-        <div class="button-row">
-          <button id="sign"></button>
-          <button id="btn"></button>
+        <div class="sb-heading">
+          <h2 class="heading-one">Star Wars: The Force Awaken</h2>
+          <p class="paragraph"> 2h40m. Fantasy. Actions</p>
+          <P>The third season of A
+            merican television movies</P>
         </div>
         <div class="movie-logos">
           <div id="logo">
@@ -45,27 +46,81 @@
           <div id="logo">
             <img src="./src/assets/images/starwars.png" alt="" />
           </div>
-          <div id="logo">
+          <div id="logo-m">
             <img src="./src/assets/images/marvel.png" alt="" />
           </div>
-          <div id="logo">
+          <div id="logo-t">
             <img src="./src/assets/images/nexflix.png" alt="" />
           </div>
-          <div id="logo">
+          <div id="logo-t">
             <img src="./src/assets/images/pixar.png" alt="" />
           </div>
-          <div id="logo"><img src="./src/assets/hbo.png" alt="" /></div>
+          <div id="logo-t"><img src="./src/assets/hbo.png" alt="" /></div>
         </div>
       </div>
+      <!-- <div class="button-text">
+        <input type="text" placeholder="search film">
+        <button>search</button>
+      </div> -->
     </section>
 
 <section class="cards-main">
-  <h2>Recent Movies</h2>
+  <h2 class="heading-one">Recent Movies</h2>
     <div class="cards-sec">
-  
+      <div class="card-holder">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1700275032086-2d871b3c8722?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW92aWUlMjBjYXJkfGVufDB8fDB8fHww" alt="Movie Avatar" />
+        <div class="title">
+          <p >Movie title</p>
+        </div>
+      </div>
+      <div class="movie-title">
+        <p id="m-title">Movie Name</p>
+        <div  class="movie-category">
+          <div class="rating">
+            <i class="fa-regular fa-star" class="rating-ta"></i>
+            <p>Rating</p>
+          </div>
+          <p>Movie category</p>
+          <p>Movie</p>
+        </div>
+      </div>
+    </div>
     </div>
   </section>
+  <section class="footer">
+      <div class="footer-top">
+         <div class="footer-text">
+        <h3 class="para">  Our platform is trusted by millions and features best updated movies all around the world.</h3>
+         </div>
+         <div class="footer-row">
+          <p class="text">Privacy policy</p>
+          <p class="text">Terms of services</p>
+          <p class="text">Language</p>
+         </div>
+
+      </div>
+
+      <div class="footer-about">
+        <div class="footer-dis">
+          <p>Home /</p>
+        <p>Discouver /</p>
+       <p>Influence /</p>
+        <p>Release</p>
+        </div>
+        <div class="footer-logo">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-google"></i>
+        </div>
+        <p class="date">@2023</p>
+      </div>
+
+  </section>
     <!-- <div id="app"></div> -->
-    <script type="module" src="/src/main.js"></script>
+    <script   src="/src/main.js" type="module"></script>
+    <!-- <script src="/src/pages/details-page/details.js" type="module"></script> -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </body>
 </html>

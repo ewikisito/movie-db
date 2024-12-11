@@ -5,15 +5,16 @@
 }
 
 body {
-  width: 100%;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #3a2626, #312f31);
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   padding: 12px;
+  align-items: center;
 }
 
 .container {
@@ -21,8 +22,9 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 500px;
-  background-color: black;
+  background-color: #000000;
 }
+
 .display-list ul {
   display: flex;
   text-decoration-style: none;
@@ -59,15 +61,45 @@ body {
   display: flex;
   flex-direction: column;
   color: #ffffff;
-  gap: 32px;
+  gap: 16px;
+  padding: 16px;
 }
 
-.button-row {
+.sb-heading {
   display: flex;
-  gap: 12px;
+  flex-direction: column;
+  color: #ffffff;
+  gap: 6px;
+  padding-bottom: 70px;
 }
 
-#btn {
+.heading-one {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.button-text {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 70px;
+}
+
+.button-text input {
+  width: 80%;
+  text-align: center;
+  padding: 24px;
+  border-radius: 30px;
+  border: none;
+}
+
+.button-text button {
+      padding: 24px;
+    border-radius: 30px;
+  border: none;
+  background: rgb(0,146,93);
+}
+
+/* .btn {
   width: 100px;
   height: 40px;
   background-color: rgb(0, 146, 93);
@@ -75,10 +107,9 @@ body {
   color: white;
   border-radius: 12px;
   border: none;
-}
+} */
 
-
-#sign {
+#sign-up {
   width: 100px;
   height: 40px;
   padding: 8px;
@@ -87,6 +118,7 @@ body {
   background-color: rgb(42, 49, 81);
   border: none;
 }
+
 .movie-logos {
   display: flex;
   justify-content: space-between;
@@ -99,7 +131,7 @@ body {
 }
 
 .cards-main {
-  padding: 30px 30px;
+  padding: 30px 0px; 
   display: flex;
   flex-direction: column;
 }
@@ -110,10 +142,14 @@ body {
 }
 
 .cards-sec {
+  width: 100%;
+  height: 250vh;
   padding: 8px;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);;
+  grid-template-columns: repeat(8, 1fr);
   gap: 8px;
+  background-color: black;
+  color: white;
 }
 
 .card {
@@ -131,8 +167,9 @@ body {
 .title {
   position: absolute;
   bottom: 20px;
-  left: 20px;
-  color: yellow;
+  left: 50px;
+  font-size: 20px;
+  color: rgb(240, 224, 9);
 }
 
 .card-holder {
@@ -154,6 +191,10 @@ body {
   align-items: center;
 }
 
+#movie-date {
+  font-size: 14px;
+}
+
 .rating {
   display: flex;
   gap: 4px;
@@ -163,5 +204,87 @@ body {
 
 #m-title {
   font-weight: 800;
-  color: white;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  #logo-t {
+    display: none;
+  }
+
+  .cards-sec {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .display-list ul {
+    display: none;
+  }
+
+  .cards-sec {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #logo-m {
+    display: none;
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  /* background: linear-gradient(135deg, #3a2626, #312f31); */
+  background-color: black;
+  color: #ffffff;
+}
+.footer-top {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.footer-row {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-about {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-dis {
+  display: flex;
+  gap: 8px;
+}
+
+.footer-logo {
+  display: flex;
+  gap: 16px;
+  padding-left: 170px;
+  margin-bottom: 16px;
+}
+
+.para {
+  font-size: 25px;
+  text-align: left;
+  padding: 12px;
+}
+
+.text {
+  font-size: 12px;
+  padding: 12px;
+}
+
+.date {
+  display: flex;
+  text-align: end;
+  padding-left: 220px;
 }
